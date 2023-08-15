@@ -29,3 +29,15 @@ SELECT * FROM houses WHERE bathrooms > 6;
 DELETE FROM houses WHERE id = 1;
 
 SELECT * FROM houses;
+
+ALTER TABLE houses
+ADD
+windows SMALLINT UNSIGNED DEFAULT 0;
+
+-- ALTER TABLE  ^^^
+-- to add a column(property)
+-- or -
+-- DROP TABLE houses;
+-- and create a new one
+
+SELECT * FROM houses
